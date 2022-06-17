@@ -10,12 +10,8 @@ and interested in identifying statistics that the most successful teams exhibit 
 possession rate on success
 
 Design
-League tables with available possession rate stats for Super Lig and top 8 European leagues are web scraped using Beautiful Soup and manipulated in Pandas and
-combined into one single data set. A baseline modeling is conducted on available data from Super Lig but the limited available did not allow for production 
-of a reliable model just for Super Lig. However, selection of features for the baseline is validated during modeling of the  top 8 European (UEFA)leagues. 
-For the main modeling of the UEFA Leagues, the data is  first split into training, validation and test sets (60, 20, 20) and feature selection is based upon 
-eliminating col-linearity using stats-models package. Training and validation test scores are also obtained using scikit-learn package as a back check and 
-proved to be within 0.02 points from each other.
+League tables with available possession rate stats for Super Lig and top 8 European leagues are web scraped using Beautiful Soup and manipulated in Pandas and combined into one single data set. A baseline modeling is conducted on available data from Super Lig but the limited available did not allow for production of a reliable model just for Super Lig. However, selection of features for the baseline is validated during modeling of the  top 8 European (UEFA)leagues. 
+For the main modeling of the UEFA Leagues, the available data is from  2015 thru 2022 consisting of 1,088 rows and 14 features. Target label is set as Possession Rate and data is split into training, validation and test sets (60, 20, 20). Feature selection is based upon eliminating col-linearity using stats-models package. Training and validation test scores are also obtained using scikit-learn package as a back check and proved to be within 0.02 points from each other. Final model is selected to be Lasso Regression albeit with modest score improvement over Simple Regression with a final R^2 score of 0.601.
 
 
 Data
