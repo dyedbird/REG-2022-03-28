@@ -32,4 +32,4 @@ Algorithms & Tools
 
 
 Communication
-•	Project presentation slides
+•	Project presentation slides (Info on slides reflects scores achieved during initial iteration of the models which did not included 2022 data)
